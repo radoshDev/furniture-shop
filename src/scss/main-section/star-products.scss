@@ -1,0 +1,125 @@
+.star-products {
+	text-align: center;
+	.description {
+		margin-bottom: 30px;
+	}
+	.slider-rounds {
+		display: flex;
+		gap: 133px;
+		justify-content: center;
+		margin-bottom: 50px;
+		.round {
+			border: 1px solid $mainBlack;
+			border-radius: 50%;
+			position: relative;
+			.inner-round {
+				height: 100px;
+				width: 100px;
+				background-color: rgba(52, 56, 61, 0.2);
+				border-radius: inherit;
+				margin: 15px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				@include fontRoboto($size: 1.125rem, $weight: 500);
+				&.active {
+					background-color: $gold;
+				}
+			}
+			&:not(:last-child)::after {
+				content: "";
+				position: absolute;
+				right: 0;
+				top: 50%;
+				display: inline-block;
+				height: 1px;
+				width: 113px;
+				background-color: $mainBlack;
+				transform: translate(calc(100% + 10px), -50%);
+			}
+		}
+	}
+	.slider {
+		.slides {
+			flex: 1 1;
+			display: flex;
+			gap: 22px;
+			margin: 0 39px;
+			.product-card {
+				height: 476px;
+				width: 360px;
+				border: 2px dashed rgba($color: $mainBlack, $alpha: 0.5);
+				border-radius: 200px 200px 20px 20px;
+				transition: border-color 0.3s ease, box-shadow 0.3s ease;
+				&:hover {
+					border-color: $gold;
+					box-shadow: 0px 15px 39px rgba(0, 0, 0, 0.1);
+				}
+				.product-image {
+					margin: 104px 0 57px;
+				}
+				.product-content {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin: 0 54px 30px;
+
+					.product-info {
+						.product-name {
+							font-weight: 500;
+							margin-bottom: 10px;
+						}
+						.rating {
+							> svg {
+								vertical-align: top;
+								margin-right: 5px;
+							}
+							.rating-number {
+								font-size: 1.25rem;
+								font-weight: 500;
+							}
+						}
+					}
+				}
+				.price {
+					@include fontRoboto($size: 1.875rem, $weight: 500);
+					color: #000;
+				}
+			}
+		}
+	}
+	.info-block {
+		margin-top: 160px;
+		.info-image {
+			margin-bottom: -40px;
+		}
+		.info-bg {
+			background-color: rgba($color: $gold, $alpha: 0.19);
+			border-radius: 30px;
+			padding: 121px 0;
+			.information {
+				display: flex;
+				justify-content: space-between;
+				max-width: 1072px;
+				padding-left: 20px;
+				padding-right: 20px;
+				margin: 0 auto;
+				.information-item {
+					display: flex;
+					align-items: center;
+					gap: 20px;
+					text-align: start;
+					.content {
+						.info-title {
+							@include fontRoboto($size: 1.25rem, $weight: 500);
+							margin-bottom: 8px;
+						}
+						.info-subtitle {
+							font-size: 0.875rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

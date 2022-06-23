@@ -1,0 +1,62 @@
+.special {
+	text-align: center;
+	.inner {
+		padding: 60px 0;
+		margin: 0 80px;
+		border-radius: 50px;
+		border: 5px solid #aacacd;
+		background: url("@img/bg-decor/special-img.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 767px;
+		.block-title {
+			@include fontMontserrat($size: 1.875rem, $weight: 600);
+			color: black;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+		}
+		.count-down {
+			display: flex;
+			gap: 55px;
+			justify-content: center;
+			margin-bottom: 40px;
+			.count-down-item {
+				svg {
+					width: 90px;
+					height: 90px;
+					fill: none;
+					.circles {
+						transform-origin: center;
+						transform: rotateY(-180deg) rotateZ(-90deg);
+						circle {
+							stroke: #f3e9e9;
+							fill: none;
+							&.counted {
+								stroke-width: 4px;
+								stroke-dasharray: 207px;
+								stroke-dashoffset: 360px;
+								filter: drop-shadow(-4px 0px 2px rgba(0, 0, 0, 0.25));
+							}
+						}
+					}
+
+					text {
+						fill: black;
+						@include fontMontserrat($size: 1.5rem, $weight: 600);
+					}
+				}
+				.text {
+					@include fontMontserrat($size: 1rem, $weight: 600);
+					font-style: italic;
+					color: black;
+					display: block;
+					margin-top: -12px;
+				}
+			}
+		}
+		.btn {
+			height: 50px;
+			width: 200px;
+		}
+	}
+}

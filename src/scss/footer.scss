@@ -1,0 +1,62 @@
+@use "fonts";
+@import "variables";
+
+.footer {
+	background-color: $gold;
+	.content {
+		padding: 80px 0;
+		display: flex;
+		justify-content: space-between;
+		.left {
+			max-width: 607px;
+			.logo {
+				margin-bottom: 20px;
+			}
+			.description {
+				margin-bottom: 20px;
+				color: $mainBlack;
+				font-weight: 400;
+			}
+			.icons {
+				display: flex;
+				align-items: center;
+				gap: 5px;
+			}
+		}
+		.right {
+			display: flex;
+			padding-right: 8px;
+			.menu {
+				margin-left: 151px;
+				.title {
+					@include fontMontserrat($size: 1.625rem, $weight: 700);
+					border-bottom: 2px solid #fff;
+					padding-bottom: 5px;
+					margin-bottom: 25px;
+				}
+				.menu-item {
+					@include fontMontserrat($size: 1.375rem, $weight: 500);
+					list-style: disc;
+					text-transform: uppercase;
+					margin-left: 25px;
+					margin-bottom: 20px;
+					list-style-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='-1 -1 4 4'><circle  r='0.8' /></svg>");
+				}
+			}
+		}
+	}
+	.copyright {
+		background-color: $mainBlack;
+		color: $gold;
+		padding: 18px 0;
+		text-align: center;
+		.img-icon {
+			vertical-align: text-top;
+			margin-right: 12px;
+		}
+		.text {
+			font-size: 1.125rem;
+			display: inline-block;
+		}
+	}
+}

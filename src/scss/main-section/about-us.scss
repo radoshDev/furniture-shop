@@ -1,0 +1,29 @@
+.about-us {
+	background: url("@img/bg-decor/circle-points.svg") no-repeat left 4% bottom;
+	.card {
+		margin: 0 40px;
+		padding: 74px 70px 79px;
+		border-radius: 50px;
+		display: flex;
+		background: url("@img/bg-decor/chair.png") no-repeat right 10px top 85%,
+			url("@img/bg-decor/home.png") no-repeat left 70px top 10px,
+			rgba($color: $gold, $alpha: 0.1);
+		.content {
+			width: 50%;
+			margin-left: auto;
+
+			.main-title {
+				margin-bottom: 30px;
+				max-width: 515px;
+			}
+			.description {
+				margin-bottom: 24px;
+				max-width: 515px;
+			}
+			.btn {
+				height: 60px;
+				width: 220px;
+			}
+		}
+	}
+}

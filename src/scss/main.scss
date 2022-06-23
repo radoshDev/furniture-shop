@@ -1,16 +1,59 @@
-@import "./fonts";
-
-body {
-	background-color: aquamarine;
-	background: url("@img/avatar-2.jpg") 0 0 no-repeat;
-	font-family: Nunito;
-	@media (max-width: 768px) {
-		background-color: darksalmon;
-	}
-	h1 {
-		color: blueviolet;
-		@media (max-width: 768px) {
-			color: red;
-		}
-	}
+@use "variables";
+@import "fonts";
+@import "buttons";
+%text {
+	line-height: 1.172;
+	color: variables.$mainBlack;
 }
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+body {
+	@include fontRoboto;
+	@extend %text;
+	height: 100%;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+.container {
+	max-width: calc(1680px + variables.$offset * 2);
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 variables.$offset;
+}
+.highlight {
+	color: variables.$gold;
+}
+.main-title {
+	@include fontMontserrat($size: 4.75rem, $weight: 600);
+	@extend %text;
+}
+.description {
+	@include fontRoboto($size: 1.375rem, $weight: 500);
+	@extend %text;
+	color: rgba($color: variables.$mainBlack, $alpha: 0.8);
+}
+
+/* Header */
+@import "./header";
+
+/* Main */
+@import "./main-section";
+
+/* Footer */
+@import "./footer";

@@ -7,7 +7,7 @@ import { scss } from "./gulp/tasks/scss.js"
 import { script } from "./gulp/tasks/script.js"
 import { images } from "./gulp/tasks/images.js"
 import { fontsStyle, otfToTtf, ttfToWoff } from "./gulp/tasks/fonts.js"
-import { svgSprite } from "./gulp/tasks/svgSprite.js"
+import { svgSprite as generateSprite } from "./gulp/tasks/svgSprite.js"
 import { zip } from "./gulp/tasks/zip.js"
 
 function watcher() {
@@ -25,6 +25,7 @@ const mainTasks = gulp.series(
 
 const dev = gulp.series(clean, mainTasks, gulp.parallel(watcher, server))
 const build = gulp.series(clean, mainTasks)
+const svgSprite = generateSprite()
 
 export { svgSprite, build, zip }
 gulp.task("default", dev)
