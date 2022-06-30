@@ -1,16 +1,24 @@
 .featured-products {
 	text-align: center;
+	background: url("@img/bg-decor/star.png") right -70px top 5px,
+		url("@img/bg-decor/star.png") left 70px top 340px;
+	background-repeat: no-repeat;
+	@media (max-width: $breakpoint-extra-small) {
+		background: none;
+	}
 	.description {
 		margin-bottom: 30px;
 	}
-	.grid {
-		display: grid;
-		grid-template: 511px / repeat(auto-fit, 400px);
-		grid-auto-rows: 511px;
+	.products {
+		margin: 0 auto;
+		display: flex;
 		justify-content: center;
+		flex-wrap: wrap;
 		gap: 80px;
 		.product-card {
 			text-align: initial;
+			max-width: 400px;
+			width: 100%;
 			.product-image {
 				border: 2px solid $darkGrey;
 				border-radius: 20px;
@@ -22,7 +30,7 @@
 				}
 			}
 			.product-title {
-				font-size: 1.25rem;
+				font-size: 20px;
 				font-weight: 700;
 				margin-bottom: 15px;
 			}
@@ -36,8 +44,11 @@
 				align-items: center;
 				.info {
 					.price-block {
-						font-size: 2rem;
+						font-size: 32px;
 						margin-bottom: 10px;
+						@media (max-width: $breakpoint-extra-small) {
+							font-size: 2rem;
+						}
 						.old-price {
 							color: $gold;
 							text-decoration: line-through;
@@ -50,8 +61,13 @@
 				.btn {
 					height: 40px;
 					width: 160px;
-					font-size: 1.125rem;
+					font-size: 18px;
 					color: $mainBlack;
+					@media (max-width: $breakpoint-extra-small) {
+						height: 40px;
+						width: 10rem;
+						font-size: 1.125rem;
+					}
 				}
 			}
 		}

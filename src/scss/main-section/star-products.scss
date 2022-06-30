@@ -1,124 +1,114 @@
 .star-products {
 	text-align: center;
+	background: url("@img/bg-decor/grid.png") right -40px top 180px;
+	background-repeat: no-repeat;
+	@media (max-width: 992px) {
+		background: none;
+	}
 	.description {
 		margin-bottom: 30px;
 	}
 	.slider-rounds {
 		display: flex;
-		gap: 133px;
 		justify-content: center;
-		margin-bottom: 50px;
+		align-items: center;
+		margin-bottom: 3.125rem;
+		font-size: 16px;
+		@media (max-width: $breakpoint-large) {
+			font-size: 13px;
+		}
+		@media (max-width: 600px) {
+			font-size: 10px;
+		}
+		@media (max-width: 400px) {
+			font-size: 8px;
+		}
 		.round {
 			border: 1px solid $mainBlack;
 			border-radius: 50%;
 			position: relative;
 			.inner-round {
-				height: 100px;
-				width: 100px;
+				height: 6.25em;
+				width: 6.25em;
 				background-color: rgba(52, 56, 61, 0.2);
 				border-radius: inherit;
-				margin: 15px;
+				margin: 0.9375em;
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				@include fontRoboto($size: 1.125rem, $weight: 500);
+				@include fontRoboto($size: 1.125em, $weight: 500);
 				&.active {
 					background-color: $gold;
 				}
 			}
-			&:not(:last-child)::after {
-				content: "";
-				position: absolute;
-				right: 0;
-				top: 50%;
-				display: inline-block;
-				height: 1px;
-				width: 113px;
-				background-color: $mainBlack;
-				transform: translate(calc(100% + 10px), -50%);
-			}
+		}
+		.line {
+			height: 1px;
+			margin: 0 0.625em;
+			width: 100%;
+			max-width: 7.0625em;
+			background-color: $mainBlack;
 		}
 	}
 	.slider {
-		.slides {
-			flex: 1 1;
-			display: flex;
-			gap: 22px;
-			margin: 0 39px;
-			.product-card {
-				height: 476px;
-				width: 360px;
-				border: 2px dashed rgba($color: $mainBlack, $alpha: 0.5);
-				border-radius: 200px 200px 20px 20px;
-				transition: border-color 0.3s ease, box-shadow 0.3s ease;
-				&:hover {
-					border-color: $gold;
-					box-shadow: 0px 15px 39px rgba(0, 0, 0, 0.1);
-				}
-				.product-image {
-					margin: 104px 0 57px;
-				}
-				.product-content {
-					display: flex;
-					justify-content: space-between;
-					align-items: center;
-					margin: 0 54px 30px;
-
-					.product-info {
-						.product-name {
-							font-weight: 500;
-							margin-bottom: 10px;
-						}
-						.rating {
-							> svg {
-								vertical-align: top;
-								margin-right: 5px;
-							}
-							.rating-number {
-								font-size: 1.25rem;
-								font-weight: 500;
-							}
-						}
-					}
-				}
-				.price {
-					@include fontRoboto($size: 1.875rem, $weight: 500);
-					color: #000;
-				}
+		padding-left: 87px;
+		padding-right: 87px;
+		@media (max-width: $breakpoint-small) {
+			padding-left: 60px;
+			padding-right: 60px;
+		}
+		.product-card {
+			// max-width: 22.5rem;
+			// flex-grow: 1;
+			border: 2px dashed rgba($color: $mainBlack, $alpha: 0.5);
+			border-radius: 200px 200px 20px 20px;
+			transition: border-color 0.3s ease, box-shadow 0.3s ease;
+			&:hover {
+				border-color: $gold;
+				box-shadow: 0px 15px 2.4375rem rgba(0, 0, 0, 0.1);
 			}
-		}
-	}
-	.info-block {
-		margin-top: 160px;
-		.info-image {
-			margin-bottom: -40px;
-		}
-		.info-bg {
-			background-color: rgba($color: $gold, $alpha: 0.19);
-			border-radius: 30px;
-			padding: 121px 0;
-			.information {
+
+			.product-image {
+				height: 16.875rem;
+				width: 12.75rem;
+				margin: 2.25rem auto 0.875rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.product-content {
 				display: flex;
 				justify-content: space-between;
-				max-width: 1072px;
-				padding-left: 20px;
-				padding-right: 20px;
-				margin: 0 auto;
-				.information-item {
-					display: flex;
-					align-items: center;
-					gap: 20px;
-					text-align: start;
-					.content {
-						.info-title {
-							@include fontRoboto($size: 1.25rem, $weight: 500);
-							margin-bottom: 8px;
+				align-items: center;
+				margin: 0 3.375rem 1.875rem;
+				@media (max-width: 650px) {
+					margin-right: 1rem;
+					margin-left: 1rem;
+				}
+
+				.product-info {
+					.product-name {
+						font-weight: 500;
+						font-size: 1.375rem;
+						margin-bottom: 10px;
+					}
+					.rating {
+						> svg {
+							vertical-align: top;
+							margin-right: 5px;
 						}
-						.info-subtitle {
-							font-size: 0.875rem;
+						.rating-number {
+							font-size: 1.25rem;
+							font-weight: 500;
+							vertical-align: bottom;
 						}
 					}
 				}
+			}
+			.price {
+				@include fontRoboto($size: 1.875rem, $weight: 500);
+				color: #000;
+				margin-bottom: 2.25rem;
 			}
 		}
 	}

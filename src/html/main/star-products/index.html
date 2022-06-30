@@ -1,0 +1,35 @@
+<section class="star-products">
+	<div class="section star-products__container">
+		<div class="section-title">OUR STAR PRODUCTS</div>
+		<p class="description">
+			Discover all our beautiful and unique products which are perfect for your home.
+		</p>
+		<div class="slider-rounds">
+			<div class="round">
+				<div class="inner-round active">FEATURE</div>
+			</div>
+			<div class="line"></div>
+			<div class="round">
+				<div class="inner-round">LATEST</div>
+			</div>
+			<div class="line"></div>
+			<div class="round">
+				<div class="inner-round">SELLER</div>
+			</div>
+		</div>
+		<div class="slider splide" id="star-products-slider">
+			<div class="splide__track">
+				<div class="splide__list">
+					@@include("./product-card.html", {"title": "Modern Chair", "img":
+					"@img/products/star-modern-chair.png", "price": 99.99, "rating": 4.7})
+					@@include("./product-card.html", {"title": "Antique Chair", "img":
+					"@img/products/antique-chair.png", "price": 299.99, "rating": 4.5})
+					@@include("./product-card.html", {"title": "Magazine Holder", "img":
+					"@img/products/star-magazine-holder.png", "price": 149.99, "rating": 5.0})
+					@@include("./product-card.html", {"title": "Comfort Chair", "img":
+					"@img/products/star-comfort-chair.png", "price": 599.99, "rating": 3.5})
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

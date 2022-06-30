@@ -1,9 +1,9 @@
-@use "variables";
+@import "variables";
 @import "fonts";
 @import "buttons";
 %text {
 	line-height: 1.172;
-	color: variables.$mainBlack;
+	color: $mainBlack;
 }
 
 * {
@@ -14,6 +14,9 @@
 
 html {
 	font-size: 16px;
+	@media (max-width: $breakpoint-large) {
+		font-size: 12px;
+	}
 }
 body {
 	@include fontRoboto;
@@ -30,23 +33,51 @@ li {
 	list-style: none;
 }
 
-.container {
-	max-width: calc(1680px + variables.$offset * 2);
+[class*="__container"] {
+	max-width: calc(1680px + $offset * 2);
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 variables.$offset;
+	padding: 0 $offset;
+	&.section {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+	@media (max-width: 992px) {
+		padding: 0 1.5rem;
+	}
+	@media (max-width: 500px) {
+		padding: 0 1rem;
+	}
 }
+// .container {
+// 	max-width: calc(1680px + $offset * 2);
+// 	width: 100%;
+// 	margin: 0 auto;
+// 	padding: 0 $offset;
+// 	@media (max-width: 992px) {
+// 		padding: 0 1.5rem;
+// 	}
+// 	@media (max-width: 500px) {
+// 		padding: 0 1rem;
+// 	}
+// }
 .highlight {
-	color: variables.$gold;
+	color: $gold;
 }
 .main-title {
 	@include fontMontserrat($size: 4.75rem, $weight: 600);
 	@extend %text;
+	@media (max-width: 992px) {
+		font-size: 3.5rem;
+	}
+	@media (max-width: 670px) {
+		font-size: 2.5rem;
+	}
 }
 .description {
 	@include fontRoboto($size: 1.375rem, $weight: 500);
 	@extend %text;
-	color: rgba($color: variables.$mainBlack, $alpha: 0.8);
+	color: rgba($color: $mainBlack, $alpha: 0.8);
 }
 
 /* Header */
