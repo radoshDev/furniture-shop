@@ -13,9 +13,9 @@
 }
 
 html {
-	font-size: 16px;
+	font-size: 10px;
 	@media (max-width: $breakpoint-large) {
-		font-size: 12px;
+		font-size: 7px;
 	}
 }
 body {
@@ -39,43 +39,32 @@ li {
 	margin: 0 auto;
 	padding: 0 $offset;
 	&.section {
-		padding-top: 5rem;
-		padding-bottom: 5rem;
+		padding-top: 8rem;
+		padding-bottom: 8rem;
 	}
 	@media (max-width: 992px) {
-		padding: 0 1.5rem;
+		padding: 0 2.4rem;
 	}
 	@media (max-width: 500px) {
-		padding: 0 1rem;
+		padding: 0 1.6rem;
 	}
 }
-// .container {
-// 	max-width: calc(1680px + $offset * 2);
-// 	width: 100%;
-// 	margin: 0 auto;
-// 	padding: 0 $offset;
-// 	@media (max-width: 992px) {
-// 		padding: 0 1.5rem;
-// 	}
-// 	@media (max-width: 500px) {
-// 		padding: 0 1rem;
-// 	}
-// }
+
 .highlight {
 	color: $gold;
 }
 .main-title {
-	@include fontMontserrat($size: 4.75rem, $weight: 600);
+	@include fontMontserrat($size: 7.6rem, $weight: 600);
 	@extend %text;
 	@media (max-width: 992px) {
-		font-size: 3.5rem;
+		font-size: 5.6rem;
 	}
 	@media (max-width: 670px) {
-		font-size: 2.5rem;
+		font-size: 4rem;
 	}
 }
 .description {
-	@include fontRoboto($size: 1.375rem, $weight: 500);
+	@include fontRoboto($size: 2.2rem, $weight: 500);
 	@extend %text;
 	color: rgba($color: $mainBlack, $alpha: 0.8);
 }

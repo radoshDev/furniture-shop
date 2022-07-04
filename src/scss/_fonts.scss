@@ -1,13 +1,13 @@
 @use "variables";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap");
 
-@mixin fontMontserrat($size: 1.375rem, $weight: 600) {
+@mixin fontMontserrat($size: 2.2rem, $weight: 600) {
 	font-family: variables.$Montserrat;
 	font-size: $size;
 	font-weight: $weight;
 }
 
-@mixin fontRoboto($size: 1rem, $weight: 400) {
+@mixin fontRoboto($size: 1.6rem, $weight: 400) {
 	font-family: variables.$Roboto;
 	font-size: $size;
 	font-weight: $weight;

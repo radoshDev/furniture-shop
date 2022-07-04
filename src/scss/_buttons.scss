@@ -6,6 +6,7 @@
 	border: none;
 	cursor: pointer;
 	color: inherit;
+	line-height: 1;
 }
 
 .icon-btn {
@@ -29,11 +30,13 @@
 .btn {
 	@extend %button;
 	@include fontMontserrat($weight: 700);
-	border: 2px solid variables.$gold;
+	border: none;
 	background-color: variables.$gold;
 	border-radius: 50px;
 	box-shadow: 0px 5px 10px rgba(205, 168, 97, 0.29);
 	&.outline {
+		border: 1px solid variables.$gold;
+		outline: 1px solid variables.$gold;
 		background-color: transparent;
 		box-shadow: none;
 	}
