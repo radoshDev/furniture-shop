@@ -30,6 +30,6 @@ export const script = () => {
 				},
 			})
 		)
-		.pipe(gulp.dest(path.build.script))
+		.pipe(gulp.dest(path.build.script, { sourcemaps: true }))
 		.pipe(plugins.browserSync.stream())
 }

@@ -18,7 +18,7 @@ export const path = {
 	src: {
 		files: `${srcFolder}/files/**/*.*`,
 		fonts: `${srcFolder}/fonts/`,
-		images: `${srcFolder}/${imgFolder}/**/*.{jpg,jpeg,png,gif,webp}`,
+		images: `${srcFolder}/${imgFolder}/**/*.{jpg,jpeg,png,gif,webp,ico}`,
 		svg: `${srcFolder}/${imgFolder}/**/*.svg`,
 		html: `${srcFolder}/*.html`,
 		scss: `${srcFolder}/scss/main.scss`,
@@ -31,6 +31,11 @@ export const path = {
 		images: `${srcFolder}/${imgFolder}/**/*.{jpg,jpeg,png,gif,svg,webp}`,
 		scss: `${srcFolder}/scss/**/*.scss`,
 		script: `${srcFolder}/script/**/*.ts`,
+	},
+	favicon: {
+		src: `${srcFolder}/${imgFolder}/favicon/favicon.svg`,
+		watch: `${srcFolder}/${imgFolder}/favicon/favicon.svg`,
+		dest: `${buildFolder}/${imgFolder}/favicon`,
 	},
 	buildFolder,
 	srcFolder,

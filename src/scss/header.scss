@@ -2,17 +2,16 @@
 
 .header {
 	height: 108rem;
-	background: url("@img/bg-decor/sofa.png") right top,
-		url("@img/bg-decor/furniture-bg.png") right top,
-		url("@img/bg-decor/header-sticks-small.svg") -8.5% 32.8%,
+	background: url("@img/bg-decor/sofa.png") right top no-repeat,
+		url("@img/bg-decor/furniture-bg.png") right top no-repeat,
+		url("@img/bg-decor/header-sticks-small.svg") -8.5% 32.8% no-repeat,
 		linear-gradient(90deg, #d6cfc2 0%, rgba(255, 255, 255, 0.5) 100%);
-	background-repeat: no-repeat;
-	padding-top: 2rem;
 	.header__container {
+		padding-top: 2rem;
 		height: 100%;
-		background: url("@img/bg-decor/header-sticks-big.svg") 71.9% 110%,
-			url("@img/bg-decor/9-dots.svg") 42% 35%, url("@img/bg-decor/9-dots.svg") 21.7% 94.7%;
-		background-repeat: no-repeat;
+		background: url("@img/bg-decor/header-sticks-big.svg") 71.9% 110% no-repeat,
+			url("@img/bg-decor/9-dots.svg") 42% 35% no-repeat,
+			url("@img/bg-decor/9-dots.svg") 21.7% 94.7% no-repeat;
 		.btn {
 			height: 6rem;
 			width: 22rem;
