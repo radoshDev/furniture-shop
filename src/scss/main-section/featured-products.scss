@@ -1,8 +1,7 @@
 .featured-products {
 	text-align: center;
-	background: url("@img/bg-decor/star.png"), url("@img/bg-decor/star.png");
-	background-position: right -73px top 6px, left 60px top 359px;
-	background-repeat: no-repeat;
+	background: no-repeat url("@img/bg-decor/star.png") right -73px top 6px,
+		no-repeat url("@img/bg-decor/star.png") left 60px top 359px;
 	@media (max-width: $breakpoint-extra-small) {
 		background: none;
 	}

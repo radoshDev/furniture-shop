@@ -1,12 +1,9 @@
 .special {
 	text-align: center;
-	background: url("@img/bg-decor/points-circle.svg") left -38px bottom 11px;
-	background-repeat: no-repeat;
+	background: no-repeat url("@img/bg-decor/points-circle.svg") left -38px bottom 11px;
 	.special__container {
 		max-width: 1830px;
-		background: url("@img/bg-decor/necklace.svg");
-		background-position: right 0 top 3.2rem;
-		background-repeat: no-repeat;
+		background: no-repeat url("@img/bg-decor/necklace.svg") right 0 top 3.2rem;
 		@media (max-width: 992px) {
 			background-position: right 0.5rem top 2.5rem;
 		}

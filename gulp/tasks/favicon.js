@@ -8,6 +8,9 @@ export const favicon = () => {
 		.pipe(gulp.dest(path.favicon.dest))
 		.pipe(
 			favicons({
+				appName: "furniture-shop",
+				appShortName: "furniture",
+				appDescription: "Shop with antique furniture",
 				icons: {
 					favicon: true,
 					appleIcon: true,
