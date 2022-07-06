@@ -1,8 +1,6 @@
 .sell-products {
 	text-align: center;
-	background: url("@img/bg-decor/2-half-circle.png");
-	background-position: right -35px top 5.875rem;
-	background-repeat: no-repeat;
+	background: url("@img/bg-decor/2-half-circle.png") right -35px top 9.4rem no-repeat;
 	@media (max-width: 768px) {
 		background-position: right -35px top 0;
 	}
@@ -10,18 +8,20 @@
 		background: none;
 	}
 	.description {
-		margin-bottom: 30px;
+		padding-top: 1px;
+		margin-bottom: 2.7rem;
+		letter-spacing: 0.00355em;
 	}
 	.slider {
-		padding-left: 83px;
-		padding-right: 83px;
+		padding-left: 83.5px;
+		padding-right: 83.5px;
 		@media (max-width: $breakpoint-small) {
 			padding-left: 60px;
 			padding-right: 60px;
 		}
 		.product-card {
-			margin-top: 40px;
 			cursor: pointer;
+			margin-bottom: 1px;
 
 			&:hover {
 				.btn.outline,
@@ -30,49 +30,61 @@
 				}
 			}
 			.card-header {
+				margin-top: 4rem;
 				background-color: $lightGrey;
-				border-radius: 30px;
-				height: 149px;
+				border-radius: 3rem;
+				height: 14.9rem;
 				position: relative;
 				display: flex;
 				flex-direction: column;
 				justify-content: flex-end;
-				margin-bottom: 20px;
+				margin-bottom: 2.2rem;
 				transition: background-color 0.3s ease;
 				.product-image {
 					position: absolute;
-					height: 110px;
-					top: -40px;
+					height: 11rem;
+					top: -3.8rem;
 					left: 50%;
 					transform: translateX(-50%);
 					display: flex;
 					align-items: center;
 					justify-content: center;
+					@media (max-width: $breakpoint-large) {
+						img {
+							width: 100%;
+							height: 100%;
+						}
+					}
 				}
 				.product-name {
-					font-size: 24px;
+					font-size: 2.4rem;
 					font-weight: 500;
-					padding-bottom: 15px;
+					padding-bottom: 1.5rem;
 				}
 			}
 			.rating {
-				margin-bottom: 17px;
+				margin-bottom: 2rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 1rem;
 				svg {
 					width: 20px;
 					height: 20px;
 				}
 			}
 			.price {
-				@include fontMontserrat($size: 1.625rem, $weight: 700);
-				margin-bottom: 17px;
+				@include fontMontserrat($size: 2.6rem, $weight: 700);
+				margin-bottom: 1.9rem;
 			}
 			.short-description {
-				font-size: 18px;
-				margin-bottom: 20px;
+				font-size: 1.8rem;
+				margin-bottom: 1.9rem;
 			}
 			.btn.outline {
-				width: 199px;
-				height: 50px;
+				width: 19.9rem;
+				height: 5rem;
+				font-size: 1.8rem;
 				transition: background-color 0.3s ease;
 			}
 		}

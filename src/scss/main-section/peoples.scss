@@ -1,9 +1,8 @@
 .peoples {
 	text-align: center;
 	background-color: $sugar;
-	background-image: url("@img/bg-decor/people-dots.png"),
-		url("@img/bg-decor/people-arrow.svg");
-	background-position: 20px 10px, right 0 top 65%;
+	background-image: url("@img/bg-decor/people-dots.png"), url("@img/bg-decor/people-arrow.svg");
+	background-position: 20px 0, right 0 top 67%;
 	background-repeat: no-repeat;
 	@media (max-width: $breakpoint-small) {
 		background-image: none;
@@ -15,12 +14,12 @@
 		display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
-		gap: 1.875rem;
+		gap: 3rem;
 		.review-card {
 			width: 100%;
 			max-width: 540px;
 			background-color: $smoke;
-			padding: 108px 21px 50px;
+			padding: 109px 21px 50px;
 			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 			border-radius: 30px;
 			letter-spacing: 0.09em;
@@ -43,16 +42,20 @@
 				font-size: 18px;
 				font-weight: 400;
 				margin-bottom: 50px;
+				text-align: center;
+				letter-spacing: 0.09em;
 			}
 			.author {
 				font-weight: 700;
 				font-size: 22px;
-				margin-bottom: 4px;
+				margin-bottom: 2px;
 				color: #000;
+				letter-spacing: 0.09em;
 			}
 			.position {
 				font-size: 20px;
 				color: #000;
+				letter-spacing: 0.09em;
 			}
 		}
 	}

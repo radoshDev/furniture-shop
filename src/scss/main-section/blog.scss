@@ -1,13 +1,9 @@
-$blogGradient: linear-gradient(
-	180deg,
-	rgba(0, 0, 0, 0.176) 26.56%,
-	rgba(0, 0, 0, 0.8) 93.23%
-);
+$blogGradient: linear-gradient(180deg, rgba(0, 0, 0, 0.176) 26.56%, rgba(0, 0, 0, 0.8) 93.23%);
 
 .blog {
 	text-align: center;
-	background: url("@img/bg-decor/curly-arrow1.svg") right 120px top 100px,
-		url("@img/bg-decor/curly-arrow2.svg") -10px 52%;
+	background: url("@img/bg-decor/curly-arrow1.svg") right 140px top 91px,
+		url("@img/bg-decor/curly-arrow2.svg") 0 53.3%;
 	background-repeat: no-repeat;
 	@media (max-width: $breakpoint-small) {
 		background: none;
@@ -16,9 +12,9 @@ $blogGradient: linear-gradient(
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
-		gap: 7.125rem;
-		margin-top: 1.875rem;
-		padding-bottom: 4.1875rem;
+		gap: 11.4rem;
+		margin-top: 3rem;
+		padding-bottom: 6.7rem;
 		position: relative;
 
 		&::after {
@@ -26,17 +22,17 @@ $blogGradient: linear-gradient(
 			position: absolute;
 			bottom: 0;
 			left: 0;
-			max-width: 64.75rem;
+			max-width: 103.6rem;
 			width: 100%;
-			height: 37.75rem;
+			height: 60.4rem;
 			background: $sugar;
-			border-radius: 0px 100px 100px 0px;
+			border-radius: 0px 10rem 10rem 0px;
 			z-index: -2;
 		}
 		.post-card {
 			max-width: 585px;
 			width: 100%;
-			min-height: 388px;
+			min-height: 38.8rem;
 			border-radius: 50px;
 			border: 2px solid rgba(86, 86, 85, 0.5);
 			display: flex;
@@ -44,18 +40,18 @@ $blogGradient: linear-gradient(
 			align-items: flex-start;
 			justify-content: flex-end;
 			color: #fff;
-			padding: 20px 50px;
+			padding: 18px 48px;
 			cursor: pointer;
 			@for $i from 1 through 4 {
 				&:nth-child(#{$i}) {
 					background: $blogGradient, url("@img/home-decore-" + $i + ".png");
+					background-size: cover;
 				}
 			}
 			@media (max-width: $breakpoint-extra-small) {
 				border-radius: 30px;
 				padding-left: 30px;
 				padding-right: 30px;
-				min-height: 24.25rem;
 			}
 			.info {
 				display: flex;
@@ -66,16 +62,16 @@ $blogGradient: linear-gradient(
 				font-size: 14px;
 				svg {
 					vertical-align: bottom;
-					margin-right: 5px;
+					margin-right: 2px;
 				}
 			}
 			.post-title {
 				font-weight: 500;
-				font-size: 2.25rem;
+				font-size: 3.6rem;
 				margin-bottom: 5px;
 			}
 			.more-link {
-				font-size: 1.25rem;
+				font-size: 2rem;
 				font-weight: 500;
 				color: rgba($color: #fff, $alpha: 0.8);
 			}

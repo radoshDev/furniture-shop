@@ -2,14 +2,16 @@
 	.about-us__container {
 		background: url("@img/bg-decor/circle-points.svg") no-repeat;
 		background-position: left 0 bottom 0;
-		background-size: 12.1875rem;
+		background-size: 19.5rem;
 		@media (max-width: 768px) {
 			background-position: left -60px bottom 0;
 		}
+		max-width: 1786px;
 
 		.card {
-			margin: 0 2.5rem;
-			padding: 0 2.8125rem 0 3.375rem;
+			margin: 0 auto;
+			padding: 0 4.4rem 0 4.7rem;
+			max-width: 160rem;
 			border-radius: 50px;
 			display: flex;
 			justify-content: space-between;
@@ -23,7 +25,8 @@
 				background-position-y: center;
 				background-size: contain;
 				flex: 1 2 652px;
-				margin: 1rem 0;
+				margin: 1.6rem 0;
+				margin-left: 2.3rem;
 				@media (max-width: 768px) {
 					display: none;
 				}
@@ -32,7 +35,7 @@
 				content: "";
 				background: url("@img/bg-decor/chair-croped.png") no-repeat;
 				background-size: contain;
-				background-position: left 0 bottom 47px;
+				background-position: left 0 bottom 8.4rem;
 				flex: 1 2 240px;
 				max-width: 240px;
 				@media (max-width: 992px) {
@@ -47,20 +50,25 @@
 			}
 			.content {
 				margin-left: auto;
-				padding: 4.625rem 0 4.9375rem;
+				padding: 7.4rem 0 7.9rem;
 				flex-shrink: 1;
-
+				.section-title {
+					margin-left: 1px;
+				}
 				.main-title {
-					margin-bottom: 30px;
+					margin-bottom: 3.1rem;
 					max-width: 515px;
+					margin-left: 1px;
 				}
 				.description {
 					margin-bottom: 24px;
 					max-width: 515px;
+					margin-left: 1px;
 				}
 				.btn {
-					height: 3.75rem;
-					width: 13.75rem;
+					height: 6rem;
+					width: 22rem;
+					margin-left: 2px;
 				}
 			}
 		}

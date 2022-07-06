@@ -6,13 +6,13 @@
 		background: none;
 	}
 	.description {
-		margin-bottom: 30px;
+		margin-bottom: 3rem;
 	}
 	.slider-rounds {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 3.125rem;
+		margin-bottom: 5.1rem;
 		font-size: 16px;
 		@media (max-width: $breakpoint-large) {
 			font-size: 13px;
@@ -28,11 +28,11 @@
 			border-radius: 50%;
 			position: relative;
 			.inner-round {
-				height: 6.25em;
-				width: 6.25em;
+				height: 10rem;
+				width: 10rem;
 				background-color: rgba(52, 56, 61, 0.2);
 				border-radius: inherit;
-				margin: 0.9375em;
+				margin: 1.4rem;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -44,9 +44,9 @@
 		}
 		.line {
 			height: 1px;
-			margin: 0 0.625em;
+			margin: 0 1rem;
 			width: 100%;
-			max-width: 7.0625em;
+			max-width: 11.3rem;
 			background-color: $mainBlack;
 		}
 	}
@@ -58,20 +58,18 @@
 			padding-right: 60px;
 		}
 		.product-card {
-			// max-width: 22.5rem;
-			// flex-grow: 1;
 			border: 2px dashed rgba($color: $mainBlack, $alpha: 0.5);
 			border-radius: 200px 200px 20px 20px;
 			transition: border-color 0.3s ease, box-shadow 0.3s ease;
 			&:hover {
 				border-color: $gold;
-				box-shadow: 0px 15px 2.4375rem rgba(0, 0, 0, 0.1);
+				box-shadow: 0px 15px 3.9rem rgba(0, 0, 0, 0.1);
 			}
 
 			.product-image {
-				height: 16.875rem;
-				width: 12.75rem;
-				margin: 2.25rem auto 0.875rem;
+				height: 27rem;
+				width: 20.4rem;
+				margin: 3.4rem auto 1.6rem;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -80,17 +78,17 @@
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				margin: 0 3.375rem 1.875rem;
+				margin: 0 5.2rem 2.6rem;
 				@media (max-width: 650px) {
-					margin-right: 1rem;
-					margin-left: 1rem;
+					margin-right: 1.6rem;
+					margin-left: 1.6rem;
 				}
 
 				.product-info {
 					.product-name {
 						font-weight: 500;
-						font-size: 1.375rem;
-						margin-bottom: 10px;
+						font-size: 2.2rem;
+						margin-bottom: 8px;
 					}
 					.rating {
 						> svg {
@@ -98,7 +96,7 @@
 							margin-right: 5px;
 						}
 						.rating-number {
-							font-size: 1.25rem;
+							font-size: 2rem;
 							font-weight: 500;
 							vertical-align: bottom;
 						}
@@ -106,9 +104,9 @@
 				}
 			}
 			.price {
-				@include fontRoboto($size: 1.875rem, $weight: 500);
+				@include fontRoboto($size: 3rem, $weight: 500);
 				color: #000;
-				margin-bottom: 2.25rem;
+				margin-bottom: 3.2rem;
 			}
 		}
 	}

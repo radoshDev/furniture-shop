@@ -20,10 +20,10 @@ function watcher() {
 	gulp.watch(path.favicon.watch, favicon)
 }
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle)
-const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, script, images, favicon))
+const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, script, images))
 
 const dev = gulp.series(clean, mainTasks, gulp.parallel(watcher, server))
-const build = gulp.series(clean, mainTasks)
+const build = gulp.series(clean, gulp.parallel(mainTasks, favicon))
 const svgSprite = generateSprite()
 
 export { svgSprite, build, zip, favicon }

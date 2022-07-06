@@ -10,7 +10,7 @@
 		padding-top: 2rem;
 		height: 100%;
 		background: url("@img/bg-decor/header-sticks-big.svg") 71.9% 110% no-repeat,
-			url("@img/bg-decor/9-dots.svg") 42% 35% no-repeat,
+			url("@img/bg-decor/9-dots.svg") 39.8% 31.8% no-repeat,
 			url("@img/bg-decor/9-dots.svg") 21.7% 94.7% no-repeat;
 		.btn {
 			height: 6rem;
@@ -213,7 +213,7 @@
 			}
 		}
 		.jumbotron {
-			margin-top: 16.8rem;
+			margin-top: 16.7rem;
 			padding: 2.4rem 0;
 			max-width: 66rem;
 			@media (max-width: 1700px) {
@@ -230,7 +230,6 @@
 				margin-top: 4.8rem;
 			}
 			.main-title {
-				line-height: 1.21;
 				margin-bottom: 3.2rem;
 				& > .highlight {
 					text-decoration: underline;

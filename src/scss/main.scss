@@ -1,10 +1,6 @@
 @import "variables";
 @import "fonts";
 @import "buttons";
-%text {
-	line-height: 1.172;
-	color: $mainBlack;
-}
 
 * {
 	padding: 0;
@@ -20,7 +16,8 @@ html {
 }
 body {
 	@include fontRoboto;
-	@extend %text;
+	color: $mainBlack;
+	line-height: 1.172;
 	height: 100%;
 }
 a {
@@ -55,7 +52,8 @@ li {
 }
 .main-title {
 	@include fontMontserrat($size: 7.6rem, $weight: 600);
-	@extend %text;
+	color: $mainBlack;
+	line-height: 1.2236;
 	@media (max-width: 992px) {
 		font-size: 5.6rem;
 	}
@@ -65,7 +63,7 @@ li {
 }
 .description {
 	@include fontRoboto($size: 2.2rem, $weight: 500);
-	@extend %text;
+	line-height: 1.172;
 	color: rgba($color: $mainBlack, $alpha: 0.8);
 }
 

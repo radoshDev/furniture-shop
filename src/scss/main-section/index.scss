@@ -1,10 +1,11 @@
 @import "../variables";
 
 .section-title {
-	@include fontMontserrat($size: 1.875rem, $weight: 600);
+	@include fontMontserrat($size: 3rem, $weight: 600);
+	line-height: 1.233;
 	border-bottom: 2px solid $gold;
-	padding-bottom: 10px;
-	margin-bottom: 20px;
+	padding-bottom: 1rem;
+	margin-bottom: 2rem;
 	display: inline-block;
 	text-transform: uppercase;
 }

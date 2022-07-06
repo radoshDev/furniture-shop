@@ -13,7 +13,7 @@ export const handleSliders = () => {
 		const sellProductsSlider = new Splide("#sell-products-slider", {
 			perPage: 5,
 			perMove: 1,
-			gap: "3.5625rem",
+			gap: "5.7rem",
 			breakpoints: {
 				1500: {
 					perPage: 4,

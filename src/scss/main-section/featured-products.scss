@@ -1,20 +1,20 @@
 .featured-products {
 	text-align: center;
-	background: url("@img/bg-decor/star.png") right -70px top 5px,
-		url("@img/bg-decor/star.png") left 70px top 340px;
+	background: url("@img/bg-decor/star.png"), url("@img/bg-decor/star.png");
+	background-position: right -73px top 6px, left 60px top 359px;
 	background-repeat: no-repeat;
 	@media (max-width: $breakpoint-extra-small) {
 		background: none;
 	}
 	.description {
-		margin-bottom: 30px;
+		margin-bottom: 29px;
 	}
 	.products {
 		margin: 0 auto;
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
-		gap: 80px;
+		gap: 75px 80px;
 		.product-card {
 			text-align: initial;
 			max-width: 400px;
@@ -35,7 +35,7 @@
 				margin-bottom: 15px;
 			}
 			.short-description {
-				font-size: 1.5rem;
+				font-size: 2.4rem;
 				margin-bottom: 15px;
 			}
 			.card-footer {
@@ -47,11 +47,12 @@
 						font-size: 32px;
 						margin-bottom: 10px;
 						@media (max-width: $breakpoint-extra-small) {
-							font-size: 2rem;
+							font-size: 3.2rem;
 						}
 						.old-price {
 							color: $gold;
 							text-decoration: line-through;
+							margin-right: 2px;
 						}
 						.price {
 							font-weight: 700;
@@ -63,10 +64,11 @@
 					width: 160px;
 					font-size: 18px;
 					color: $mainBlack;
+					margin: 0 5px 6px 0;
 					@media (max-width: $breakpoint-extra-small) {
 						height: 40px;
-						width: 10rem;
-						font-size: 1.125rem;
+						width: 18rem;
+						font-size: 1.8rem;
 					}
 				}
 			}
